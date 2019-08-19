@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 07/05/19 14:14:40 by Eclipse SUMO netedit Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="E:\limeng\july5\hello.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="E:\limeng\july5\hello.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="0"/>
+        <junctions.limit-turn-speed value="-1"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-2000.00,0.00,3000.00,0.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":S1_0" function="internal">
+        <lane id=":S1_0_0" index="0" speed="35.00" length="0.10" shape="1000.00,-8.00 1000.00,-8.00"/>
+        <lane id=":S1_0_1" index="1" speed="35.00" length="0.10" shape="1000.00,-4.80 1000.00,-4.80"/>
+        <lane id=":S1_0_2" index="2" speed="35.00" length="0.10" shape="1000.00,-1.60 1000.00,-1.60"/>
+    </edge>
+    <edge id=":S2_0" function="internal">
+        <lane id=":S2_0_0" index="0" speed="35.00" length="0.10" shape="2000.00,-8.00 2000.00,-8.00"/>
+        <lane id=":S2_0_1" index="1" speed="35.00" length="0.10" shape="2000.00,-4.80 2000.00,-4.80"/>
+        <lane id=":S2_0_2" index="2" speed="35.00" length="0.10" shape="2000.00,-1.60 2000.00,-1.60"/>
+    </edge>
+    <edge id=":S3_0" function="internal">
+        <lane id=":S3_0_0" index="0" speed="35.00" length="0.10" shape="2100.00,-8.00 2100.00,-8.00"/>
+        <lane id=":S3_0_1" index="1" speed="35.00" length="0.10" shape="2100.00,-4.80 2100.00,-4.80"/>
+        <lane id=":S3_0_2" index="2" speed="35.00" length="0.10" shape="2100.00,-1.60 2100.00,-1.60"/>
+    </edge>
+    <edge id=":S4_0" function="internal">
+        <lane id=":S4_0_0" index="0" speed="35.00" length="0.10" shape="2500.00,-8.00 2500.00,-8.00"/>
+        <lane id=":S4_0_1" index="1" speed="35.00" length="0.10" shape="2500.00,-4.80 2500.00,-4.80"/>
+        <lane id=":S4_0_2" index="2" speed="35.00" length="0.10" shape="2500.00,-1.60 2500.00,-1.60"/>
+    </edge>
+
+    <edge id="BL1" from="B1" to="S1" priority="1">
+        <lane id="BL1_0" index="0" speed="35.00" length="3000.00" shape="-2000.00,-8.00 1000.00,-8.00"/>
+        <lane id="BL1_1" index="1" speed="35.00" length="3000.00" shape="-2000.00,-4.80 1000.00,-4.80"/>
+        <lane id="BL1_2" index="2" speed="35.00" length="3000.00" shape="-2000.00,-1.60 1000.00,-1.60"/>
+    </edge>
+    <edge id="L1" from="S1" to="S2" priority="1">
+        <lane id="L1_0" index="0" speed="35.00" length="1000.00" shape="1000.00,-8.00 2000.00,-8.00"/>
+        <lane id="L1_1" index="1" speed="35.00" length="1000.00" shape="1000.00,-4.80 2000.00,-4.80"/>
+        <lane id="L1_2" index="2" speed="35.00" length="1000.00" shape="1000.00,-1.60 2000.00,-1.60"/>
+    </edge>
+    <edge id="L2" from="S2" to="S3" priority="1">
+        <lane id="L2_0" index="0" speed="35.00" length="100.00" shape="2000.00,-8.00 2100.00,-8.00"/>
+        <lane id="L2_1" index="1" speed="35.00" length="100.00" shape="2000.00,-4.80 2100.00,-4.80"/>
+        <lane id="L2_2" index="2" speed="35.00" length="100.00" shape="2000.00,-1.60 2100.00,-1.60"/>
+    </edge>
+    <edge id="L3" from="S3" to="S4" priority="1">
+        <lane id="L3_0" index="0" speed="35.00" length="400.00" shape="2100.00,-8.00 2500.00,-8.00"/>
+        <lane id="L3_1" index="1" speed="35.00" length="400.00" shape="2100.00,-4.80 2500.00,-4.80"/>
+        <lane id="L3_2" index="2" speed="35.00" length="400.00" shape="2100.00,-1.60 2500.00,-1.60"/>
+    </edge>
+    <edge id="L4" from="S4" to="S5" priority="1">
+        <lane id="L4_0" index="0" speed="35.00" length="500.00" shape="2500.00,-8.00 3000.00,-8.00"/>
+        <lane id="L4_1" index="1" speed="35.00" length="500.00" shape="2500.00,-4.80 3000.00,-4.80"/>
+        <lane id="L4_2" index="2" speed="35.00" length="500.00" shape="2500.00,-1.60 3000.00,-1.60"/>
+    </edge>
+
+    <junction id="B1" type="dead_end" x="-2000.00" y="0.00" incLanes="" intLanes="" shape="-2000.00,0.00 -2000.00,-9.60"/>
+    <junction id="S1" type="priority" x="1000.00" y="0.00" incLanes="BL1_0 BL1_1 BL1_2" intLanes=":S1_0_0 :S1_0_1 :S1_0_2" shape="1000.00,0.00 1000.00,-9.60 1000.00,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="S2" type="priority" x="2000.00" y="0.00" incLanes="L1_0 L1_1 L1_2" intLanes=":S2_0_0 :S2_0_1 :S2_0_2" shape="2000.00,0.00 2000.00,-9.60 2000.00,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="S3" type="priority" x="2100.00" y="0.00" incLanes="L2_0 L2_1 L2_2" intLanes=":S3_0_0 :S3_0_1 :S3_0_2" shape="2100.00,0.00 2100.00,-9.60 2100.00,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="S4" type="priority" x="2500.00" y="0.00" incLanes="L3_0 L3_1 L3_2" intLanes=":S4_0_0 :S4_0_1 :S4_0_2" shape="2500.00,0.00 2500.00,-9.60 2500.00,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="S5" type="dead_end" x="3000.00" y="0.00" incLanes="L4_0 L4_1 L4_2" intLanes="" shape="3000.00,-9.60 3000.00,0.00"/>
+
+    <connection from="BL1" to="L1" fromLane="0" toLane="0" via=":S1_0_0" dir="s" state="M"/>
+    <connection from="BL1" to="L1" fromLane="1" toLane="1" via=":S1_0_1" dir="s" state="M"/>
+    <connection from="BL1" to="L1" fromLane="2" toLane="2" via=":S1_0_2" dir="s" state="M"/>
+    <connection from="L1" to="L2" fromLane="0" toLane="0" via=":S2_0_0" dir="s" state="M"/>
+    <connection from="L1" to="L2" fromLane="1" toLane="1" via=":S2_0_1" dir="s" state="M"/>
+    <connection from="L1" to="L2" fromLane="2" toLane="2" via=":S2_0_2" dir="s" state="M"/>
+    <connection from="L2" to="L3" fromLane="0" toLane="0" via=":S3_0_0" dir="s" state="M"/>
+    <connection from="L2" to="L3" fromLane="1" toLane="1" via=":S3_0_1" dir="s" state="M"/>
+    <connection from="L2" to="L3" fromLane="2" toLane="2" via=":S3_0_2" dir="s" state="M"/>
+    <connection from="L3" to="L4" fromLane="0" toLane="0" via=":S4_0_0" dir="s" state="M"/>
+    <connection from="L3" to="L4" fromLane="1" toLane="1" via=":S4_0_1" dir="s" state="M"/>
+    <connection from="L3" to="L4" fromLane="2" toLane="2" via=":S4_0_2" dir="s" state="M"/>
+
+    <connection from=":S1_0" to="L1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":S1_0" to="L1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":S1_0" to="L1" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":S2_0" to="L2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":S2_0" to="L2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":S2_0" to="L2" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":S3_0" to="L3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":S3_0" to="L3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":S3_0" to="L3" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":S4_0" to="L4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":S4_0" to="L4" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":S4_0" to="L4" fromLane="2" toLane="2" dir="s" state="M"/>
+
+</net>

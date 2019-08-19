@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+
+   <vType id="CarA" length="5" maxSpeed="34" carFollowModel="IDM" actionStepLength="1" tau="1.4" speedDev="0.0" accel="1" decel="2" speedFactor="1.0" minGap="2" delta="4" stepping="1.5" lcSpeedGain="5" lcLookaheadLeft="2" lcAssertive="5" speedGain="5" lcPushy="0.2" lcStrategic="100"/>
+   <vType id="CarB" vClass="motorcycle"/>
+   
+    <flow id="ab" color="1,1,0"  begin="0" end= "2000" vehsPerHour='3500' type="CarA" departLane="random" departSpeed="max">
+     <route edges="BL1 L1 L2 L3 L4"/>
+    </flow>
+	
+    <flow id="bc" color="0,0,1"  begin="0" end= "2000" vehsPerHour='500' type="CarB"  departSpeed="max" departPos="last">
+     <route edges="BL1 L1 L2 L3 L4"/>
+    </flow>
+ 
+</routes>
